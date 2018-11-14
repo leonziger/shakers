@@ -1,0 +1,53 @@
+.main-banner {
+  background: #1e8aef;
+
+  &__container {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__info,
+  &__image {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__info {
+    color: #fff;
+    padding-top: 85px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: -0.72px;
+  }
+
+  &__description {
+    /* Style for "The World'" */
+    color: #d2e7fb;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24.89px;
+    letter-spacing: -0.3px;
+  }
+
+  &__actions {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__link {
+    /* Style for "Watch how" */
+    color: #95c9fb;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.89px;
+    text-decoration: underline;
+    letter-spacing: -0.28px;
+  }
+}

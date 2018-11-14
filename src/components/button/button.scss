@@ -1,0 +1,29 @@
+.button {
+  padding: 24px 40px;
+  color: #345477;
+  background-color: #9addfc;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: $delay;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24.89px;
+  letter-spacing: -0.34px;
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &__icon{
+    margin-right: 13px;
+  }
+
+
+}
