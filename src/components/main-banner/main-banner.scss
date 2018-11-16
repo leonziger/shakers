@@ -1,22 +1,29 @@
 .main-banner {
   background: #1e8aef;
+  padding-bottom: 54px;
 
   &__container {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
     padding-right: 0;
   }
 
   &__info,
   &__image {
-    width: 50%;
     padding-left: 15px;
     padding-right: 15px;
   }
 
+  &__image {
+    margin-top: -26px;
+    margin-left: 10px;
+  }
+
   &__info {
+    width: 45%;
     color: #fff;
-    padding-top: 85px;
+    padding-top: 80px;
   }
 
   &__title {
@@ -27,27 +34,56 @@
   }
 
   &__description {
-    /* Style for "The World'" */
     color: #d2e7fb;
     font-size: 15px;
     font-weight: 400;
     line-height: 24.89px;
     letter-spacing: -0.3px;
+    padding-top: 16px;
+    //padding-right: 75px;
   }
 
   &__actions {
+    padding-top: 21px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
   }
 
   &__link {
-    /* Style for "Watch how" */
     color: #95c9fb;
     font-size: 14px;
     font-weight: 400;
     line-height: 24.89px;
     text-decoration: underline;
     letter-spacing: -0.28px;
+    padding-top: 11px;
   }
+
+  &__clients {
+    padding-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-slogan {
+      padding-left: 142px;
+      padding-right: 38px;
+      color: #a3d0fc;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24.89px;
+      letter-spacing: -0.3px;
+    }
+
+    &-labels {
+      display: inline-flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+}
+
+.main-banner__clients-label+.main-banner__clients-label {
+  margin-right: 35px;
 }
