@@ -1,0 +1,89 @@
+.faq {
+  padding-bottom: 92px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: #315479;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42.89px;
+    letter-spacing: -0.72px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 71px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 361px;
+  }
+
+  &__citation {
+    display: inline-flex;
+    background-color: #158af4;
+    border-radius: 5px;
+    position: relative;
+
+    &:after {
+      display: inline-flex;
+      content: url("../images/corner.jpg");
+      position: absolute;
+      left: 30px;
+      top: 95%;
+    }
+  }
+
+  &__mark {
+    display: inline-flex;
+    padding-top: 50px;
+    padding-left: 24px;
+    color: #116ace;
+    font-family: Georgia;
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 21.37px;
+    letter-spacing: -1.68px;
+  }
+
+  &__description {
+    display: inline-flex;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.38px;
+    padding-top: 25px;
+    padding-left: 5px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__signature {
+    color: #315479;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.32px;
+    line-height: 20.89px;
+    padding-top: 20px;
+    padding-left: 6px;
+  }
+
+  &__compamy {
+    padding-top: 3px;
+    padding-left: 6px;
+    color: #677482;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.28px;
+    line-height: 22.89px;
+  }
+}

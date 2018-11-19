@@ -1,0 +1,46 @@
+.main-footer {
+  display: flex;
+  padding-top: 68px;
+  padding-bottom: 93px;
+
+
+  &__list {
+    display: flex;
+    margin-left: 52px;
+  }
+
+
+  &__title {
+    color: #3974ca;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 22.89px;
+    text-transform: uppercase;
+    letter-spacing: -0.25px;
+    display: flex;
+  }
+
+  &__description {
+    width: 269px;
+    color: #323232;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21.89px;
+    letter-spacing: -0.3px;
+    display: flex;
+    padding-top: 3px;
+  }
+
+  &__copyright {
+    color: #323232;
+    font-weight: 400;
+    line-height: 21.89px;
+    letter-spacing: -0.25px;
+    font-size: 13px;
+  }
+}
+
+
+.main-footer__item + .main-footer__item {
+  padding-left: 62px;
+}
