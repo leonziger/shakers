@@ -28,17 +28,22 @@
   }
 
   &__citation {
-    display: inline-flex;
+    display: flex;
     background-color: #158af4;
     border-radius: 5px;
     position: relative;
 
     &:after {
-      display: inline-flex;
-      content: url("../images/corner.jpg");
+      content: '';
+      display: block;
       position: absolute;
+      width: 0;
+      height: 0;
+      top: 100%;
       left: 30px;
-      top: 95%;
+      border-left: 10px solid transparent;
+      border-right: 26px solid transparent;
+      border-top: 14px solid #158af4;
     }
   }
 
