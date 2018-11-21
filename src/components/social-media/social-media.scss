@@ -1,0 +1,13 @@
+.social-media {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 4px;
+
+  &__item {
+    display: flex;
+  }
+}
+
+.social-media__item + .social-media__item {
+  padding-left: 16px;
+}
