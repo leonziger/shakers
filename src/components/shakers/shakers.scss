@@ -1,18 +1,17 @@
-.shakers-list {
+.shakers {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #1e91f7;
 
   &__item {
     width: 100%;
-    max-width: 297px;
-    display: flex;
+    display: flex !important;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
+    min-width: 297px;
     border-right: 1px solid #1e91f7;
-    padding-top: 25px;
-    padding-bottom: 16px;
+    padding: 16px 0;
   }
 
   &__title {
@@ -22,6 +21,9 @@
     line-height: 26.66px;
     text-transform: uppercase;
     letter-spacing: -0.64px;
+    text-align: center;
+    display: flex;
+    padding-top: 9px;
   }
 
   &__image {
