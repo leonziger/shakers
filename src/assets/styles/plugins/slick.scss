@@ -13,3 +13,24 @@
 .slick-vertical .slick-slide {
   border: 0;
 }
+
+
+.slick-prev {
+  left: -50px;
+
+  &:before {
+    content: url("../images/arrow_left.png");
+  }
+}
+
+.slick-next {
+  right: -50px;
+  &:before {
+    content: url("../images/arrow_right.png");
+  }
+}
+
+.slick-list {
+  border-right: 1px solid #1e91f7;
+  border-left: 1px solid #1e91f7;
+}

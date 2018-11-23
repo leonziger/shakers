@@ -1,8 +1,8 @@
 import $ from 'jquery';
 
-$('.shakers').slick({
+$('.shakers-list').slick({
   arrows: true,
   infinite: true,
   slidesToShow: 4,
-  slidesToScroll: 3
+  slidesToScroll: 2
 });
