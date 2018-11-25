@@ -3,3 +3,4 @@ import 'slick-carousel';
 require('@fancyapps/fancybox');
 
 import './components/shakers/shakers';
+import './components/scrollup/scrollup';
