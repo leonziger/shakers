@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "cross-env NODE_ENV=production gulp build"
+    "build": "cross-env NODE_ENV=production gulp build",
+    "deploy": "gh-pages -d ./public"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
@@ -44,6 +45,7 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.2",
+    "gh-pages": "^2.0.1",
     "jquery": "^3.3.1",
     "slick-carousel": "^1.8.1"
   }

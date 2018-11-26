@@ -20,6 +20,7 @@ const bro = require('gulp-bro');
 const babelify = require('babelify');
 const uglify = require('gulp-uglify');
 const isDevelopment = process.env.NODE_ENV !== 'production';
+const ghpages = require('gh-pages');
 
 
 gulp.task('views', function buildHTML() {
