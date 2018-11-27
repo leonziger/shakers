@@ -13,6 +13,13 @@ $('.shakers-list').slick({
         centerMode: true,
         slidesToShow: 3
       }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        centerMode: true,
+        slidesToShow: 2
+      }
     }
   ]
 });
