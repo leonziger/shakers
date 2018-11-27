@@ -9,6 +9,8 @@ $('nav a').click(function() {
   let current_li = $('nav a.active').parent('li').index();
 
   let coordinates = $(link).offset().top - 120;
-  $('html, body').animate({scrollTop:coordinates}, 1000);
+  $('html, body').animate({
+          scrollTop:  coordinates
+        }, 1000);
   return false;
 });

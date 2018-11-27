@@ -4,5 +4,15 @@ $('.shakers-list').slick({
   arrows: true,
   infinite: true,
   slidesToShow: 4,
-  slidesToScroll: 2
+  slidesToScroll: 2,
+
+  responsive: [
+    {
+      breakpoint: 1365,
+      settings: {
+        centerMode: true,
+        slidesToShow: 3
+      }
+    }
+  ]
 });

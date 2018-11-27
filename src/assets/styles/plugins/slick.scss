@@ -17,9 +17,12 @@
 
 .slick-prev {
   left: -50px;
-
   &:before {
     content: url("../images/arrow_left.png");
+  }
+
+  @media(max-width: 1360px) {
+    left: 0;
   }
 }
 
@@ -27,6 +30,10 @@
   right: -50px;
   &:before {
     content: url("../images/arrow_right.png");
+  }
+
+  @media(max-width: 1360px) {
+    right: 0;
   }
 }
 
