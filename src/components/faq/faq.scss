@@ -13,6 +13,7 @@
     line-height: 42.89px;
     letter-spacing: -0.72px;
     margin: 0 auto;
+    text-align: center;
   }
 
   &__list {
@@ -61,6 +62,11 @@
       border-right: 26px solid transparent;
       border-top: 14px solid #158af4;
     }
+
+    @media (max-width: 480px) {
+      padding-left: 30px;
+      text-align: justify;
+    }
   }
 
   &__mark {
@@ -73,6 +79,10 @@
     font-weight: 400;
     line-height: 21.37px;
     letter-spacing: -1.68px;
+
+    @media(max-width: 480px) {
+      display: none;
+    }
   }
 
   &__description {

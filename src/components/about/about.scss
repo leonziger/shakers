@@ -6,6 +6,11 @@
     padding-top: 56px;
     padding-bottom: 79px;
     background: #0e88f3;
+
+    @media(max-width: 768px) {
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
   }
 
   &__title {
@@ -16,6 +21,10 @@
     font-weight: 400;
     line-height: 40.89px;
     letter-spacing: -0.64px;
+
+    @media(max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   &__description {
