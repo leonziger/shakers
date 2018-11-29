@@ -6,9 +6,23 @@
 
   &__list {
     display: flex;
-    margin-left: 52px;
+    margin-left: 22px;
+    flex-wrap: wrap;
+
+    @media(max-width: 940px) {
+      justify-content: center;
+      margin-left: 0;
+    }
   }
 
+  &__item {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
   &__title {
     color: #3974ca;
@@ -21,7 +35,7 @@
   }
 
   &__description {
-    width: 269px;
+    width: 270px;
     color: #323232;
     font-size: 15px;
     font-weight: 400;
@@ -32,10 +46,16 @@
   }
 
   &__signature {
-    padding-top: 83px;
+    padding-top: 33px;
     margin-left: 52px;
     display: flex;
     align-items: center;
+
+    @media(max-width: 992px) {
+      margin-left: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 
   &__copyright {
@@ -45,11 +65,9 @@
     letter-spacing: -0.5px;
     font-size: 13px;
     padding-left: 16px;
+    padding-right: 16px;
     padding-top: 10px;
+    text-align: center;
   }
 }
 
-
-.main-footer__item + .main-footer__item {
-  padding-left: 62px;
-}
