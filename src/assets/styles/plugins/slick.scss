@@ -42,7 +42,7 @@
 
 .slick-next {
   right: -50px;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateY(-50%);
 
   @media(max-width: 1360px) {
     right: 0;
