@@ -14,3 +14,9 @@ $('nav a').click(function() {
         }, 1000);
   return false;
 });
+
+$('.button').click(function(){
+  let coordinates = $('#shakers').offset().top-250;
+  $('html, body').animate({scrollTop:coordinates}, 1000);
+  return false;
+})
