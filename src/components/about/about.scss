@@ -24,6 +24,11 @@
 
     @media(max-width: 768px) {
       font-size: 24px;
+      width: auto;
+    }
+
+    @media(max-width: 560px) {
+      font-size: 20px;
     }
   }
 
@@ -34,10 +39,24 @@
     line-height: 24.89px;
     letter-spacing: -0.32px;
     padding-top: 9px;
+
+    @media(max-width: 768px) {
+      text-align: center;
+    }
+
+    @media(max-width: 560px) {
+      font-size: 14px;
+    }
   }
 
   &__button {
     margin-top: 25px;
     padding: 18px 38px;
+
+    @media(max-width: 560px) {
+      font-size: 14px;
+      padding: 14px 30px;
+      margin-top: 10px;
+    }
   }
 }

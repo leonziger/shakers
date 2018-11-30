@@ -3,6 +3,9 @@
   padding-top: 68px;
   padding-bottom: 93px;
 
+  @media(max-width: 768px) {
+    padding-bottom: 30px;
+  }
 
   &__list {
     display: flex;

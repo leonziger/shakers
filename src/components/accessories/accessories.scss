@@ -2,6 +2,10 @@
   padding-top: 55px;
   padding-bottom: 74px;
 
+  @media(max-width: 768px) {
+    padding-bottom: 0;
+  }
+
   &__title {
     margin: 0 auto;
     width: 560px;
@@ -11,6 +15,16 @@
     line-height: 42.89px;
     letter-spacing: -0.64px;
     text-align: center;
+
+    @media(max-width: 768px) {
+      width: auto;
+      font-size: 28px;
+    }
+
+    @media(max-width: 560px) {
+      width: auto;
+      font-size: 24px;
+    }
   }
 
   &__caption {
@@ -20,6 +34,11 @@
     letter-spacing: -0.5px;
     line-height: 30.89px;
     padding-top: 25px;
+
+    @media(max-width: 768px) {
+      width: auto;
+      font-size: 22px;
+    }
   }
 
   &__text {
@@ -27,12 +46,21 @@
     letter-spacing: -0.45px;
     line-height: 32.89px;
     padding-top: 25px;
+
+    @media(max-width: 768px) {
+      font-size: 18px;
+      padding-top: 0;
+    }
   }
 
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
+
+    @media (max-width: 1240px) {
+      justify-content: center;
+    }
   }
 
   &__block {
@@ -41,11 +69,31 @@
     padding-right: 90px;
     padding-bottom: 53px;
 
+    @media (max-width: 1240px) {
+      width: 100%;
+      max-width: 600px;
+      padding-right: 0;
+
+      @media(max-width: 768px) {
+        width: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+
     &:nth-child(1) {
       order: 0;
+
+      @media (max-width: 1240px) {
+        order: 1;
+      }
     }
     &:nth-child(2) {
       order: 1;
+
+      @media (max-width: 1240px) {
+        order: 0;
+      }
     }
     &:nth-child(3) {
       order: 4;
