@@ -1,18 +1,9 @@
 import $ from 'jquery';
 
-let top_offset = 0;
-if ($('html').width() <= 1020 ) {
-  top_offset = 70;
-} else {
-  top_offset = 97; }
-let coordinats = $('.main-header').offset().top + top_offset;
-
-$(window).scroll(function() {
-  let windowScrollTop = $(window).scrollTop();
-  if (windowScrollTop >= coordinats) {
+$(window).scroll(function (){
+  if ($(this).scrollTop() > 0){
     $('.main-header').addClass('sticky');
-  }
-  else {
+  } else{
     $('.main-header').removeClass('sticky');
   }
 });

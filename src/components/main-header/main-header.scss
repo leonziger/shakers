@@ -1,6 +1,13 @@
 .main-header {
-  min-height: 97px;
   display: flex;
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 97px;
+  background: #1e8aef;
+  transition: background-color 0.2s ease;
 
   &__container {
     display: flex;

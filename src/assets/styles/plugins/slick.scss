@@ -65,3 +65,30 @@
     width: 297px !important;
   }
 }
+
+
+/* -------- Standard font and loader redefined ---------  */
+.slick-prev,
+.slick-next {
+  &:before {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+.slick-dots {
+  li {
+    button {
+      &:before {
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+  }
+}
+
+.slick-list {
+  .slick-loading & {
+    background: #fff slick-image-url("./../images/ajax-loader.gif") center center no-repeat;
+  }
+}
+
+/* -------- Standard font and loader redefined ---------  */
