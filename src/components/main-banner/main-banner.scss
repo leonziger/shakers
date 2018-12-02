@@ -104,16 +104,22 @@
       @media(max-width: 1200px) {
         padding-left: 38px;
       }
+      @media(max-width: 1100px) {
+        text-align: center;
+      }
     }
 
     &-labels {
       display: inline-flex;
       align-items: flex-start;
       justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &-label {
+      margin-left: 17px;
+      margin-right: 17px;
+
     }
   }
-}
-
-.main-banner__clients-label+.main-banner__clients-label {
-  margin-right: 35px;
 }
