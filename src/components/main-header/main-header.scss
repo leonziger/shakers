@@ -9,8 +9,17 @@
   background: #1e8aef;
   transition: background-color 0.2s ease;
 
+  @media (max-width: 992px) {
+    min-height: 67px;
+    background: darken(#1e8aef,10%);
+  }
+
   &__container {
     display: flex;
+
+    @media(max-width: 992px) {
+      justify-content: space-between;
+    }
   }
 
   &__logo {
@@ -22,7 +31,43 @@
   &__nav {
     display: flex;
     padding-top: 5px;
-  }
 
+    @media(max-width: 992px) {
+      padding-top: 30px;
+      width: 100vw;
+      max-width: 320px;
+      position: fixed;
+      top: 67px;
+      bottom: 0;
+      right: 0;
+      background: #116ace;
+      opacity: 0.8;
+      transform: translateX(800px);
+      transition: .4s;
+    }
+    .nav {
+      @media (max-width: 992px) {
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &__link {
+        @media (max-width: 992px) {
+          color: #fff;
+        }
+        &:hover,
+        &_active {
+          @media (max-width: 992px) {
+            color: #ffc925;
+            border-bottom: 3px solid transparent;
+          }
+        }
+      }
+    }
+    &.is-open {
+      z-index: 5;
+      transform: translateX(0);
+    }
+  }
 
 }
