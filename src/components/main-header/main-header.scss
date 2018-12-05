@@ -14,6 +14,17 @@
     background: darken(#1e8aef,10%);
   }
 
+
+  &_sticky {
+    background: darken(#1e8aef,10%);
+    min-height: 77px;
+
+    @media (max-width: 768px) {
+      min-height: 67px;
+    }
+  }
+
+
   &__container {
     display: flex;
 
@@ -34,8 +45,7 @@
 
     @media(max-width: 992px) {
       padding-top: 30px;
-      width: 100vw;
-      max-width: 320px;
+      width: 200px;
       position: fixed;
       top: 67px;
       bottom: 0;

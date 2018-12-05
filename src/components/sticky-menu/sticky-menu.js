@@ -2,8 +2,8 @@ import $ from 'jquery';
 
 $(window).scroll(function (){
   if ($(this).scrollTop() > 0){
-    $('.main-header').addClass('sticky');
+    $('.main-header').addClass('main-header_sticky');
   } else{
-    $('.main-header').removeClass('sticky');
+    $('.main-header').removeClass('main-header_sticky');
   }
 });
