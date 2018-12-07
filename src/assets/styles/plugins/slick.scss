@@ -15,59 +15,7 @@
 }
 
 
-.slick-prev,
-.slick-next {
-  width: 28px;
-  height: 29px;
-  z-index: 5;
-  background-image: url("../images/arrow_left.png");
-
-  &:before {
-    content: '';
-  }
-
-  &:hover {
-    opacity: .5;
-    background-image: url("../images/arrow_left.png");
-  }
-}
-
-.slick-prev {
-  left: -50px;
-
-  @media(max-width: 1360px) {
-    left: 0;
-  }
-}
-
-.slick-next {
-  right: -50px;
-  transform: rotateY(180deg) translateY(-50%);
-
-  @media(max-width: 1360px) {
-    right: 0;
-  }
-}
-
-.slick-list {
-  border-right: 1px solid #1e91f7;
-  border-left: 1px solid #1e91f7;
-
-  @media(max-width: 1360px) {
-    border-right: 0;
-    border-left: 0;
-  }
-}
-
-
-.slick-slide {
-  @media(max-width: 992px) {
-    width: 297px !important;
-  }
-}
-
-
-/* -------- Standard font and loader redefined ---------  */
+/* -------- Start: Standard font and loader redefined ---------  */
 .slick-prev,
 .slick-next {
   &:before {
@@ -91,4 +39,4 @@
   }
 }
 
-/* -------- Standard font and loader redefined ---------  */
+/* -------- End: Standard font and loader redefined ---------  */

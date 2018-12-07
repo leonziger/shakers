@@ -1,23 +1,8 @@
 import $ from 'jquery';
 
-$('nav a').click(function() {
+$('[href^="#"]').click(function(){
   let link = $(this).attr('href');
-
-  $('nav a').removeClass('active');
-  $(this).addClass('active');
-
-  let current_li = $('nav a.active').parent('li').index();
-
-  let coordinates = $(link).offset().top - 120;
-  $('html, body').animate({
-          scrollTop:  coordinates
-        }, 1000);
-  return false;
-});
-
-
-$('.button').click(function(){
-  let coordinates = $('#shakers').offset().top-250;
+  let coordinates = $(link).offset().top-$('.main-header').height()-50;
   $('html, body').animate({scrollTop:coordinates}, 1000);
   return false;
 })
