@@ -1,13 +1,17 @@
 .main-header {
   display: flex;
-  //position: fixed;
-  //z-index: 500;
-  //top: 0;
-  //left: 0;
-  //right: 0;
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  right: 0;
   min-height: 97px;
   background: #1e8aef;
   transition: 0.2s;
+
+  @media(max-width: 768px) {
+    min-height: 77px;
+  }
 
   &_sticky {
     background: darken(#1e8aef,10%);
@@ -35,10 +39,10 @@
     display: flex;
 
     @media(max-width: 992px) {
-      padding-top: 30px;
+      padding-top: 60px;
       width: 200px;
       position: fixed;
-      top: 67px;
+      top: 0;
       bottom: 0;
       right: 0;
       background: #116ace;
@@ -53,20 +57,16 @@
         align-items: flex-start;
       }
       &__link {
-        @media (max-width: 992px) {
           color: #fff;
-        }
+
         &:hover,
         &_active {
-          @media (max-width: 992px) {
             color: #ffc925;
-            border-bottom: 3px solid transparent;
-          }
+            text-decoration: none;
         }
       }
     }
     &.is-open {
-      z-index: 5;
       transform: translateX(0);
     }
   }
